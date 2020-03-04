@@ -16,6 +16,7 @@
 		9E7EF40C241027340067BF9B /* Playlist+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7EF40B241027340067BF9B /* Playlist+Convenience.swift */; };
 		9E7EF40E241028950067BF9B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7EF40D241028950067BF9B /* CoreDataStack.swift */; };
 		9E7EF41024102F090067BF9B /* Song+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7EF40F24102F090067BF9B /* Song+Convenience.swift */; };
+		9E7EF412241033520067BF9B /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7EF411241033520067BF9B /* PlaylistController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9E7EF40B241027340067BF9B /* Playlist+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Playlist+Convenience.swift"; sourceTree = "<group>"; };
 		9E7EF40D241028950067BF9B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		9E7EF40F24102F090067BF9B /* Song+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Song+Convenience.swift"; sourceTree = "<group>"; };
+		9E7EF411241033520067BF9B /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaylistController.swift; path = PlaylistCoredata/Model/PlaylistController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		3E1DF47323F322A30002BC07 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9E7EF411241033520067BF9B /* PlaylistController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				3E1DF46323F3222E0002BC07 /* PlaylistCoredata.xcdatamodeld in Sources */,
 				3E1DF45B23F3222E0002BC07 /* SceneDelegate.swift in Sources */,
 				9E7EF40C241027340067BF9B /* Playlist+Convenience.swift in Sources */,
+				9E7EF412241033520067BF9B /* PlaylistController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
