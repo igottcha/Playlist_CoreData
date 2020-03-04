@@ -7,7 +7,7 @@
     <entity name="Song" representedClassName="Song" syncable="YES" codeGenerationType="class">
         <attribute name="artist" attributeType="String"/>
         <attribute name="title" attributeType="String"/>
-        <relationship name="playlist" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Playlist" inverseName="songs" inverseEntity="Playlist"/>
+        <relationship name="playlist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Playlist" inverseName="songs" inverseEntity="Playlist"/>
     </entity>
     <elements>
         <element name="Playlist" positionX="-63" positionY="-18" width="128" height="73"/>

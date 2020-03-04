@@ -19,21 +19,26 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="RwF-zX-Ybh">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Playlist Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uTI-AR-lUz">
-                                            <rect key="frame" x="8" y="9" width="398" height="34"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Playlist Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uTI-AR-lUz">
+                                            <rect key="frame" x="8" y="8" width="398" height="34"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="uTI-AR-lUz" secondAttribute="bottom" constant="8" id="GNe-LT-xKW"/>
+                                        <constraint firstAttribute="trailing" secondItem="uTI-AR-lUz" secondAttribute="trailing" constant="8" id="Y9l-2k-zhB"/>
+                                        <constraint firstItem="uTI-AR-lUz" firstAttribute="leading" secondItem="RwF-zX-Ybh" secondAttribute="leading" constant="8" id="Ytg-eO-H8d"/>
+                                        <constraint firstItem="uTI-AR-lUz" firstAttribute="top" secondItem="RwF-zX-Ybh" secondAttribute="top" constant="8" id="hm6-WR-dMz"/>
+                                    </constraints>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="playlistCell" textLabel="BHD-9Z-Lob" detailTextLabel="ExK-M1-X82" style="IBUITableViewCellStyleValue1" id="NFE-ar-Ohj">
-                                        <rect key="frame" x="0.0" y="81" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="78" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NFE-ar-Ohj" id="HFp-W2-Eqk">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -164,8 +169,17 @@
                         <viewLayoutGuide key="safeArea" id="Ujq-3Q-cbO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Songs" id="hn2-W1-OSY">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Nmi-6S-hwD"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Nmi-6S-hwD">
+                            <connections>
+                                <action selector="addSongButtonTapped:" destination="9M4-0P-Y69" id="OHk-RI-LY1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="songArtistTextField" destination="7Is-sp-rGm" id="Ify-Se-wIb"/>
+                        <outlet property="songTableView" destination="krV-Q1-QYh" id="Org-Ot-coa"/>
+                        <outlet property="songTitleTextField" destination="xDo-Jq-xwP" id="pLg-y6-faR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Map-Dn-52O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
